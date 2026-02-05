@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Licigle Cleaning | Move-In & Move-Out Cleaning in Spring, TX</title>
+  <meta name="description" content="Premium move-in and move-out cleaning in Spring, TX. Room detailing and deep cleaning. Free quotes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --ink:#e9eef5;
+      --muted:#b6c2d3;
+      --line:rgba(233,238,245,0.12);
+      --gold:#d7b56d;
+      --gold2:#f2dd9b;
+      --shadow: 0 18px 50px rgba(0,0,0,.35);
+      --radius: 18px;
+      --radius2: 26px;
+      --max: 1120px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(1200px 700px at 20% 10%, rgba(215,181,109,0.12), transparent 55%),
+                  radial-gradient(900px 500px at 85% 20%, rgba(242,221,155,0.10), transparent 60%),
+                  var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+    a{color:inherit}
+    .wrap{max-width: var(--max); margin: 0 auto; padding: 0 20px;}
+    .topbar{
+      position: sticky; top:0; z-index: 50;
+      backdrop-filter: blur(10px);
+      background: rgba(11,15,20,0.72);
+      border-bottom: 1px solid var(--line);
+    }
+    .topbar-inner{
+      display:flex; align-items:center; justify-content:space-between;
+      padding: 14px 0; gap: 14px;
+    }
+    .brand{display:flex; align-items:center; gap: 12px;}
+    .brand-mark{
+      width: 34px; height: 34px; border-radius: 10px;
+      background: linear-gradient(135deg, rgba(215,181,109,.35), rgba(242,221,155,.18));
+      border: 1px solid rgba(215,181,109,.35);
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+      display:grid; place-items:center;
+      font-family: "Playfair Display", serif; font-weight: 700;
+      color: var(--gold2);
+    }
+    .brand-title{font-weight: 650; letter-spacing: .04em; text-transform: uppercase; font-size: 13px; opacity: .95;}
+    .brand-sub{font-size: 12px; color: var(--muted); margin-top: 2px;}
+    nav{display:flex; gap: 18px; align-items:center; flex-wrap: wrap; justify-content: flex-end;}
+    nav a{
+      text-decoration:none; font-size: 13px; color: var(--muted);
+      padding: 8px 10px; border-radius: 10px; border: 1px solid transparent;
+    }
+    nav a:hover{color: var(--ink); border-color: var(--line); background: rgba(255,255,255,.03)}
+    .cta-row{display:flex; gap:10px; align-items:center;}
+    .btn{
+      text-decoration:none; display:inline-flex; align-items:center; justify-content:center;
+      padding: 10px 14px; border-radius: 12px;
+      border: 1px solid var(--line); background: rgba(255,255,255,.03);
+      color: var(--ink); font-weight: 600; font-size: 13px; white-space: nowrap;
+    }
+    .btn:hover{border-color: rgba(215,181,109,.35); background: rgba(215,181,109,.08)}
+    .btn-gold{
+      border-color: rgba(215,181,109,.55);
+      background: linear-gradient(135deg, rgba(215,181,109,.22), rgba(242,221,155,.10));
+    }
+    .hero{padding: 60px 0 34px;}
+    .hero-grid{display:grid; grid-template-columns: 1.15fr .85fr; gap: 24px; align-items: stretch;}
+    .hero-card{
+      border: 1px solid var(--line); border-radius: var(--radius2);
+      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+      box-shadow: var(--shadow); padding: 34px; overflow:hidden;
+    }
+    .kicker{
+      display:inline-flex; gap:10px; align-items:center;
+      font-size: 12px; color: var(--muted);
+      text-transform: uppercase; letter-spacing: .14em;
+    }
+    .dot{
+      width: 6px; height: 6px; border-radius: 999px;
+      background: var(--gold); box-shadow: 0 0 0 6px rgba(215,181,109,.12);
+    }
+    h1{
+      font-family: "Playfair Display", serif; font-weight: 700;
+      letter-spacing: .01em; line-height: 1.06;
+      margin: 14px 0 14px;
+      font-size: clamp(34px, 4.3vw, 56px);
+    }
+    .lead{color: var(--muted); font-size: 16px; max-width: 52ch; margin: 0 0 22px;}
+    .hero-actions{display:flex; flex-wrap:wrap; gap: 10px; margin-top: 18px;}
+    .trust{
+      display:flex; flex-wrap:wrap; gap: 10px;
+      margin-top: 18px; padding-top: 18px;
+      border-top: 1px solid var(--line);
+      color: var(--muted); font-size: 13px;
+    }
+    .pill{
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.02);
+      padding: 8px 10px; border-radius: 999px;
+    }
+    .logo-card{
+      border: 1px solid var(--line); border-radius: var(--radius2);
+      background: radial-gradient(700px 450px at 30% 10%, rgba(215,181,109,0.16), transparent 55%),
+                  linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+      box-shadow: var(--shadow);
+      padding: 20px;
+      display:flex; flex-direction:column; justify-content:space-between;
+    }
+    .logo-wrap{
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,.08);
+      background: rgba(0,0,0,.25);
+      padding: 14px;
+    }
+    .logo-wrap img{width:100%; height:auto; display:block; border-radius: 12px;}
+    .note{margin-top:14px; color: var(--muted); font-size:13px;}
+    .section{padding: 44px 0;}
+    .section h2{
+      font-family: "Playfair Display", serif;
+      font-weight: 650; margin: 0 0 10px; font-size: 30px;
+    }
+    .section p{color: var(--muted); margin: 0 0 22px;}
+    .cards{display:grid; grid-template-columns: repeat(12, 1fr); gap: 14px;}
+    .card{
+      grid-column: span 4;
+      border: 1px solid var(--line); border-radius: var(--radius);
+      background: rgba(255,255,255,.02); padding: 18px;
+    }
+    .card h3{margin: 0 0 8px; font-size: 16px;}
+    .card small{color: var(--muted); display:block;}
+    .split{display:grid; grid-template-columns: 1fr 1fr; gap: 18px; align-items: start;}
+    .panel{
+      border: 1px solid var(--line); border-radius: var(--radius2);
+      background: rgba(255,255,255,.02); padding: 22px;
+    }
+    .checklist{margin:0; padding-left:18px; color: var(--muted)}
+    .checklist li{margin: 10px 0}
+    .contact{
+      border: 1px solid rgba(215,181,109,.28);
+      background: linear-gradient(135deg, rgba(215,181,109,.12), rgba(255,255,255,.02));
+      border-radius: var(--radius2);
+      padding: 26px;
+    }
+    form{display:grid; gap: 12px; margin-top: 14px;}
+    label{font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .12em;}
+    input, textarea{
+      width: 100%;
+      padding: 12px 12px;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background: rgba(0,0,0,.18);
+      color: var(--ink);
+      outline: none;
+      font-family: inherit;
+    }
+    textarea{min-height:120px; resize:vertical;}
+    .fineprint{color: var(--muted); font-size: 12px; margin-top: 12px;}
+    footer{
+      padding: 30px 0 40px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 920px){
+      .hero-grid{grid-template-columns: 1fr;}
+      .card{grid-column: span 6;}
+      .split{grid-template-columns: 1fr;}
+    }
+    @media (max-width: 560px){
+      nav{display:none;}
+      .card{grid-column: span 12;}
+      .hero-card{padding: 26px;}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="wrap">
+      <div class="topbar-inner">
+        <div class="brand">
+          <div class="brand-mark">L</div>
+          <div>
+            <div class="brand-title">Licigle Cleaning</div>
+            <div class="brand-sub">Move-In / Move-Out • Room Detailing</div>
+          </div>
+        </div>
+
+        <nav aria-label="Primary">
+          <a href="#services">Services</a>
+          <a href="#includes">What’s Included</a>
+          <a href="#areas">Service Area</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="cta-row">
+          <a class="btn" href="mailto:licigle.cleaning@gmail.com">Email</a>
+          <a class="btn btn-gold" href="tel:13463724657">Call (346) 372-4657</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-card">
+          <div class="kicker"><span class="dot"></span> Premium cleaning for inspection-ready results</div>
+          <h1>Move-In & Move-Out Cleaning—done with a luxury-level finish.</h1>
+          <p class="lead">
+            We specialize in move-out / move-in cleans and room detailing—perfect when you need one room brought back to spotless.
+            Fast quotes, reliable scheduling, and detail-forward work.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#contact">Request a Free Quote</a>
+            <a class="btn" href="sms:+13463724657">Text Us</a>
+          </div>
+
+          <div class="trust">
+            <span class="pill">✔ Detail-focused</span>
+            <span class="pill">✔ Respectful, careful work</span>
+            <span class="pill">✔ Flexible scheduling</span>
+            <span class="pill">✔ Serving Spring, TX</span>
+          </div>
+        </div>
+
+        <aside class="logo-card" aria-label="Brand">
+          <div class="logo-wrap">
+            <img src="moving out cleaning.png" alt="Licigle Moving Out Cleaning logo" />
+          </div>
+          <div class="note">
+            <strong style="color: var(--gold2);">Focused services:</strong> Move-In / Move-Out + Room Detailing.
+            <br />
+            <span>Ask about adding refrigerator/oven, baseboards, and extra detailing.</span>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" id="services">
+    <div class="wrap">
+      <h2>Services</h2>
+      <p>Simple menu, high standards. We do fewer things—and do them exceptionally well.</p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Move-Out Cleaning</h3>
+          <small>Inspection-ready cleaning for apartments, homes, and rentals.</small>
+        </div>
+        <div class="card">
+          <h3>Move-In Cleaning</h3>
+          <small>Start fresh in a sanitized, polished space before you unpack.</small>
+        </div>
+        <div class="card">
+          <h3>Room Detailing</h3>
+          <small>One-room deep clean when you need targeted help (kitchen, bath, bedroom, etc.).</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="includes">
+    <div class="wrap">
+      <div class="split">
+        <div class="panel">
+          <h2 style="margin-top:0;">What’s Included</h2>
+          <p>Every clean is detail-first. Common items include:</p>
+          <ul class="checklist">
+            <li>Kitchen & bathroom deep clean (surfaces, sinks, fixtures)</li>
+            <li>Dusting (including reachable ledges and corners)</li>
+            <li>Floors vacuumed and mopped</li>
+            <li>Doors, light switches, and handles wiped down</li>
+            <li>Trash removed (client-provided bags)</li>
+          </ul>
+          <p class="fineprint">Add-ons available: inside fridge, inside oven, baseboards, blinds, interior windows.</p>
+        </div>
+
+        <div class="panel">
+          <h2 style="margin-top:0;">How Quotes Work</h2>
+          <p>We keep it straightforward. Send the basics and we’ll respond quickly.</p>
+          <ul class="checklist">
+            <li>Property type + approximate size</li>
+            <li>Move-in or move-out</li>
+            <li>Any priority areas (kitchen, bathrooms, one-room detailing)</li>
+            <li>Your preferred date/time</li>
+          </ul>
+          <div class="trust" style="border-top:none; padding-top:0; margin-top:14px;">
+            <span class="pill">Fast response</span>
+            <span class="pill">Clear pricing</span>
+            <span class="pill">Respectful service</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="areas">
+    <div class="wrap">
+      <div class="split">
+        <div class="panel">
+          <h2 style="margin-top:0;">Service Area</h2>
+          <p>Based in <strong>Spring, TX 77386</strong>. We serve Spring and nearby areas depending on schedule.</p>
+          <p class="fineprint">If you’re outside Spring, message us—often we can still help.</p>
+
+          <div class="panel" style="margin-top:14px;">
+            <h3 style="margin:0 0 8px;">Business Contact</h3>
+            <div style="color: var(--muted); font-size: 14px;">
+              <div>Adrian Licon</div>
+              <div>Phone/Text: <a href="tel:13463724657">(346) 372-4657</a></div>
+              <div>Email: <a href="mailto:licigle.cleaning@gmail.com">licigle.cleaning@gmail.com</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact" id="contact">
+          <h2 style="margin-top:0;">Request a Free Quote</h2>
+          <p style="margin:0 0 10px; color: var(--muted);">Fill this out and we’ll get back to you. (This form uses email.)</p>
+
+          <form action="mailto:licigle.cleaning@gmail.com" method="post" enctype="text/plain">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="Name" placeholder="Your name" required />
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input id="phone" name="Phone" placeholder="Best number to reach you" required />
+            </div>
+            <div>
+              <label for="service">Service Needed</label>
+              <input id="service" name="Service" placeholder="Move-out / move-in / room detailing" required />
+            </div>
+            <div>
+              <label for="details">Details</label>
+              <textarea id="details" name="Details" placeholder="Address area, size, preferred date/time, and any add-ons (fridge/oven/baseboards)." required></textarea>
+            </div>
+            <button class="btn btn-gold" type="submit" style="cursor:pointer; width: fit-content;">Send Request</button>
+          </form>
+
+          <div class="fineprint">Prefer faster? Call or text: <a href="sms:+13463724657">(346) 372-4657</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div style="display:flex; flex-wrap:wrap; gap: 10px; justify-content:space-between; align-items:center;">
+        <div>© 2026 Licigle. All rights reserved.</div>
+        <div style="color: var(--muted);">Move-In / Move-Out • Room Detailing • Spring, TX</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
