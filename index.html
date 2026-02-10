@@ -329,7 +329,12 @@
           <h2 style="margin-top:0;">Request a Free Quote</h2>
           <p style="margin:0 0 10px; color: var(--muted);">Fill this out and we’ll get back to you. (This form uses email.)</p>
 
-          <form action="mailto:licigle.cleaning@gmail.com" method="post" enctype="text/plain">
+          <form action="https://formsubmit.co/licigle.cleaning@gmail.com" method="POST">
+
+  <input type="hidden" name="_subject" value="New Quote Request - Licigle Cleaning">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_captcha" value="false">
+
             <div>
               <label for="name">Name</label>
               <input id="name" name="Name" placeholder="Your name" required />
