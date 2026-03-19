@@ -116,18 +116,38 @@
       margin: 0 0 18px;
     }
 
-    .promo-banner{
-        margin: 0 0 22px;
-    }
+   .promo-strip{
+    display:inline-flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:10px;
+    margin: 0 0 22px;
+    padding: 10px 14px;
+    border: 1px solid rgba(215,181,109,.30);
+    border-radius: 999px;
+    background: linear-gradient(135deg, rgba(215,181,109,.10), rgba(255,255,255,.02));
+    color: var(--ink);
+  }
 
-    .promo-banner img{
-      display:block;
-      width:100%;
-      max-width:720px;
-      height:auto;
-      border-radius:18px;
-      box-shadow: var(--shadow);
-    }
+  .promo-badge{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(215,181,109,.18);
+    border: 1px solid rgba(215,181,109,.35);
+    color: var(--gold2);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .08em;
+  }
+
+  .promo-text{
+    color: var(--muted);
+    font-size: 14px;
+    font-weight: 600;
+  }
     .logo-card{
       border: 1px solid var(--line); border-radius: var(--radius2);
       background: radial-gradient(700px 450px at 30% 10%, rgba(215,181,109,0.16), transparent 55%),
@@ -246,17 +266,18 @@
             <span class="pill">✔ Satisfaction Guaranteed</span>
           </div>
 
-          <div class="promo-banner" id="promo-banner">
-            <img src="licigle-banner-10off.png" alt="10% OFF Your First Cleaning — Limited-Time Offer Ends April 20">
+          <div class="promo-strip" id="promo-strip">
+            <span class="promo-badge">10% OFF</span>
+            <span class="promo-text">Limited-Time Offer — Ends April 20</span>
           </div>
-          
+
           <script>
             const promoEndDate = new Date("2026-04-21T00:00:00");
             const now = new Date();
-            const promoBanner = document.getElementById("promo-banner");
+            const promoStrip = document.getElementById("promo-strip");
 
-            if (promoBanner && now >= promoEndDate) {
-              promoBanner.style.display = "none";
+            if (promoStrip && now >= promoEndDate) {
+              promoStrip.style.display = "none";
             }
           </script>
 
