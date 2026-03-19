@@ -109,6 +109,25 @@
       background: rgba(255,255,255,.02);
       padding: 8px 10px; border-radius: 999px;
     }
+    .hero-assurance{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin: 0 0 18px;
+    }
+
+    .promo-banner{
+        margin: 0 0 22px;
+    }
+
+    .promo-banner img{
+      display:block;
+      width:100%;
+      max-width:720px;
+      height:auto;
+      border-radius:18px;
+      box-shadow: var(--shadow);
+    }
     .logo-card{
       border: 1px solid var(--line); border-radius: var(--radius2);
       background: radial-gradient(700px 450px at 30% 10%, rgba(215,181,109,0.16), transparent 55%),
@@ -193,7 +212,7 @@
           <div class="brand-mark">L</div>
           <div>
             <div class="brand-title">Licigle Cleaning</div>
-            <div class="brand-sub">Move-In / Move-Out • Room Detailing</div>
+            <div class="brand-sub">Move-In / Move-Out • Deep Cleaning</div>
           </div>
         </div>
 
@@ -219,17 +238,27 @@
           <div class="kicker"><span class="dot"></span> Premium cleaning for inspection-ready results</div>
           <h1>Professional Move-In & Move-Out Cleaning with a Luxury-Level Finish</h1>
           <p class="lead">
-          We provide detail-focused move-in, move-out, and deep cleaning services in Spring and The Woodlands with reliable scheduling, careful work, and inspection-ready results.
+            We provide detail-focused move-in, move-out, and deep cleaning services in Spring and The Woodlands with reliable scheduling, careful work, and inspection-ready results.
           </p>
 
           <div class="hero-assurance">
-          <span class="pill">✔ Insured</span>
-          <span class="pill">✔ Satisfaction Guaranteed</span>
+            <span class="pill">✔ Insured</span>
+            <span class="pill">✔ Satisfaction Guaranteed</span>
           </div>
 
           <div class="promo-banner" id="promo-banner">
-          <img src="licigle-banner-10off.png" alt="10% OFF Your First Cleaning — Limited-Time Offer Ends April 20">
+            <img src="licigle-banner-10off.png" alt="10% OFF Your First Cleaning — Limited-Time Offer Ends April 20">
           </div>
+          
+          <script>
+            const promoEndDate = new Date("2026-04-21T00:00:00");
+            const now = new Date();
+            const promoBanner = document.getElementById("promo-banner");
+
+            if (promoBanner && now >= promoEndDate) {
+              promoBanner.style.display = "none";
+            }
+          </script>
 
           <div class="hero-actions">
             <a class="btn btn-gold" href="#contact">Request a Free Quote</a>
@@ -379,7 +408,7 @@
     <div class="wrap">
       <div style="display:flex; flex-wrap:wrap; gap: 10px; justify-content:space-between; align-items:center;">
         <div>© 2026 Licigle. All rights reserved.</div>
-        <div style="color: var(--muted);">Move-In / Move-Out • Room Detailing • Spring, TX</div>
+        <div style="color: var(--muted);">Move-In / Move-Out • Deep Cleaning • Spring, TX</div>
       </div>
     </div>
   </footer>
